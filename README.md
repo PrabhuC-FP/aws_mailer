@@ -31,6 +31,8 @@ This Laravel controller (`AwsMailController`) lets you send emails via **Amazon 
 ```bash
 composer create-project laravel/laravel aws-mailer
 cd aws-mailer
+
+pip install boto3
 ```
 
 ```cURL
