@@ -44,3 +44,13 @@ curl -X POST http://localhost:8000/api/send-aws-mail \
 ```
 POST http://localhost:8000/api/send-aws-mail
 ```
+
+### 3. MENTION THE AWS KEY SECRET IN ENV FILE
+```
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=
+AWS_USE_PATH_STYLE_ENDPOINT=false
+
+```
