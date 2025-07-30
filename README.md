@@ -50,6 +50,9 @@ AWS_USE_PATH_STYLE_ENDPOINT=false
 php artisan serv
 ```
 
+### IMPORTANT!
+- storage/python (Folder required with 2 major files)
+- aws_mailer.py, send_mail.py (Required files used to send MAIL)
 
 ### END POINT
 ```
