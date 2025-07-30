@@ -31,3 +31,16 @@ This Laravel controller (`AwsMailController`) lets you send emails via **Amazon 
 ```bash
 composer create-project laravel/laravel aws-mailer
 cd aws-mailer
+```
+
+```cURL
+curl -X POST http://localhost:8000/api/send-aws-mail \
+  -d "to=test@example.com" \
+  -d "subject=Hello from SES" \
+  -d "body=<h1>This is an email from Laravel using Python</h1>"
+```
+
+### 2. END POINT
+```
+POST http://localhost:8000/api/send-aws-mail
+```
