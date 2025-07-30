@@ -35,19 +35,7 @@ cd aws-mailer
 pip install boto3
 ```
 
-```cURL
-curl -X POST http://localhost:8000/api/send-aws-mail \
-  -d "to=test@example.com" \
-  -d "subject=Hello from SES" \
-  -d "body=<h1>This is an email from Laravel using Python</h1>"
-```
-
-### 2. END POINT
-```
-POST http://localhost:8000/api/send-aws-mail
-```
-
-### 3. MENTION THE AWS KEY SECRET IN ENV FILE
+### 2. MENTION THE AWS KEY SECRET IN ENV FILE
 ```
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
@@ -55,4 +43,22 @@ AWS_DEFAULT_REGION=us-east-1
 AWS_BUCKET=
 AWS_USE_PATH_STYLE_ENDPOINT=false
 
+```
+
+### 3. RUN THE PROJECT
+```
+php artisan serv
+```
+
+
+### END POINT
+```
+POST http://localhost:8000/api/send-aws-mail
+```
+
+```cURL
+curl -X POST http://localhost:8000/api/send-aws-mail \
+  -d "to=test@example.com" \
+  -d "subject=Hello from SES" \
+  -d "body=<h1>This is an email from Laravel using Python</h1>"
 ```
